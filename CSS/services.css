@@ -1,0 +1,150 @@
+/*
+
+   CyberPunk Services Page Stylesheet
+   
+   Filename: services.css
+
+*/
+
+/*centering*/
+
+.container {
+    text-align: center;
+}
+
+/*makes it float infinitely at the interval of 1.5seconds*/
+
+.floating {
+    text-align: center;
+    color: gainsboro;
+    opacity: 0.4;
+    max-width: 50px;
+    padding-top: 14rem;
+    animation-name: floating;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-image: none;
+}
+
+/*Background image*/
+
+.section1 {
+    text-align: center;
+    margin-top: 3%;
+    height: 500px;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&w=1000&q=80);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*h1 styles*/
+
+.section1 h1 {
+    text-align: center;
+    padding-top: 9rem;
+}
+
+/*margin service 1*/
+
+.service1 {
+    margin-top: 22%;
+    margin-bottom: 2%;
+}
+
+/*margin service 2*/
+
+.service2 {
+    margin-bottom: 2%;
+}
+
+/*card length*/
+
+.flip-card {
+    height: 315px;
+    perspective: 1000px;
+}
+
+/*padding title*/
+
+.card-title {
+    padding-top: 10px;
+}
+
+/*background image and flipping*/
+
+.flip-card-inner {
+    background-image: url(https://i.pinimg.com/originals/67/3b/77/673b77ce602fac53b406ce36dfab8dac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*flip 180 degrees*/
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/*make sure the position is absolute and when flipping does not show reverse texts*/
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/*front side styles*/
+
+.flip-card-front {
+    border: 1px solid black;
+    color: black;
+}
+
+/*back side styles and rotate back if not hover*/
+
+.flip-card-back {
+    border: 1px solid black;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/*learn more button*/
+
+.learn {
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+
+.learn:hover {
+    background-color: white;
+}
+
+.paragraph {
+    margin: 10px;
+}
+
+/*float by how much*/
+
+@keyframes floating {
+    from {
+        transform: translate(0, -0px);
+    }
+    65% {
+        transform: translate(0, -8px);
+    }
+    to {
+        transform: translate(0, 0px);
+    }
+}

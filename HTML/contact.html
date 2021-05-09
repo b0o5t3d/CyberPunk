@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    CyberPunk
+    Date: 10/8/2020  
+
+    Filename: contact.html
+   -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberPunk</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/layout.css" />
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <script src="../JS/top.js" defer></script>
+    <script src="https://kit.fontawesome.com/7eaa83c1bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top <i class="fas fa-arrow-up"></i></button>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../Images/logo.png" width="130" />
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#exCollapsingNavbar">
+                &#9776;
+            </button>
+            <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+                <div id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="services.html" class="nav-link">Services</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Learn More About Us <span class="sr-only">(current)</span>
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content bg-dark">
+                                    <a href="aboutus.html">About Us</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                    <li class="dropdown order-1">
+                        <button type="button" data-toggle="dropdown"
+                            class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-2">
+                            <li class="px-3 py-2">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <input id="emailInput" placeholder="Email" class="form-control form-control-sm"
+                                            type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="passwordInput" placeholder="Password"
+                                            class="form-control form-control-sm" type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <small><a href="#" data-toggle="modal" data-target="#modalRegister"
+                                                style="padding-right: 40px;">Register
+                                                Now</a></small>
+                                        <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot
+                                                password?</a></small>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Pop Up Modal -->
+    <div id="modalRegister" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Register Now</h3>
+                    <button type="button" class="close font-weight-light" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form" role="form">
+                        <div class="form-group">
+                            <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <input id="passwordInput" placeholder="Password" class="form-control form-control-sm"
+                                type="text" required="">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Forgot password</h3>
+                    <button type="button" class="close font-weight-light" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Reset your password</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Left Hand Side -->
+    <div class="container contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <i class="fas fa-envelope"></i>
+                    <h4>Feel free to send us a message if you have any enquiries!</h4><br>
+                    <h5>Check out our Social Media too!</h5>
+                    <ul class="list-unstyled list-inline text-center">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/FlatSoc/" class="fab fa-facebook-f">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank"
+                                href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                class="fab fa-twitter">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/franciscus/?hl=en"
+                                class="fab fa-instagram">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.cyberyouth.sg/meet-the-team"
+                                class="fab fa-linkedin-in">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right Hand Side -->
+            <div class="col-md-9">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="fname">First Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name"
+                                name="fname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                name="lname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="mobile">Mobile:</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="mobile" patern="^\d{8}$"
+                                placeholder="Enter Mobile" name="mobile">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Comment:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Enter Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="file">Upload file: <input type="file" id="file"
+                                name="file"></label>
+                    </div>
+                    <div class="form-group">
+                        <div style="padding-left:13px">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Locations -->
+    <div class="container location">
+        <div class="row">
+            <div class="col-md-6 office">
+                <h2>Office Locations</h2>
+                <p class="lead">500 Dover Road</p>
+                <p class="lead">Singapore 139651</p>
+                <span class="fas fa-phone"> +65 6775 1133</span>
+                <h2>Office Hours</h2>
+                <p>Monday: 9am-9pm</p>
+                <p>Tuesday: 9am-9pm</p>
+                <p>Wednesday: 9am-9pm</p>
+                <p>Thurday: 9am-9pm</p>
+                <p>Friday: 9am-9pm</p>
+                <p>Saturday/Sunday: Non-Working Hours</p>
+            </div>
+            <div class="col-md-6 iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7758676388303!2d103.77536081534474!3d1.3097810620662795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a602ff17c15%3A0xa9545dd23993859e!2sSingapore%20Polytechnic!5e0!3m2!1sen!2ssg!4v1620571527898!5m2!1sen!2ssg"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CyberPunk</h5>
+                    <p>NOW HIRING! Join us for exclusive positions!</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-1 mb-2">ABOUT CYBERPUNK</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">News</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Investors</a>
+                        </li>
+                        <li>
+                            <a href="#!">Sustainability</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">GET HELP</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!">Payment Options</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <h5 class="mb-1">Register for free</h5>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" data-toggle="modal" data-target="#modalRegister" class="btn btn-danger btn-rounded">Sign
+                    up!</a>
+            </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr>
+        • English (US) • &copy; Copyright 2020 CyberPunk • <span>
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.facebook.com/FlatSoc/" class="fab fa-facebook-f">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank"
+                        href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        class="fab fa-twitter">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.instagram.com/franciscus/?hl=en" class="fab fa-instagram">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.cyberyouth.sg/meet-the-team" class="fab fa-linkedin-in">
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+        </span>
+
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

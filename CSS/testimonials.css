@@ -1,0 +1,97 @@
+/*
+
+   CyberPunk Testimonial Page Stylesheet
+   
+   Filename: testimonials.css
+
+*/
+
+/*header styles*/
+
+#testimonials {
+    background-color: rgba(83, 86, 101, 0.92);
+    padding-top: 100px;
+}
+
+/*h1 styles*/
+
+#testimonials h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*person image styles*/
+
+.testimg {
+    width: 15%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*hover effect*/
+
+.card:hover {
+    box-shadow: 10px 10px 26px -15px rgba(0, 0, 0, 0.75)
+}
+
+/*card styles*/
+
+.card-body {
+    height: 350px;
+}
+
+/*icon styles*/
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 120px;
+    width: 120em;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-indicators li {
+    height: 5px;
+    width: 55px;
+    border: none;
+    background-color: black;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    font-family: sans-serif;
+    opacity: 0.6;
+    font-size: 22px;
+}
+
+/*partners styles*/
+
+.partners {
+    margin-top: 170px;
+    margin-bottom: 100px;
+    text-align: center;
+}

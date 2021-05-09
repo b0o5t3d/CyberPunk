@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    
+    CyberPunk
+    Date: 10/8/2020  
+
+    Filename: services.html
+   -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberPunk</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/layout.css" />
+    <link rel="stylesheet" href="../CSS/services.css" />
+    <script src="../JS/top.js" defer></script>
+    <script src="https://kit.fontawesome.com/7eaa83c1bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top <i class="fas fa-arrow-up"></i></button>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../Images/logo.png" width="130" />
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#exCollapsingNavbar">
+                &#9776;
+            </button>
+            <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+                <div id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="services.html" class="nav-link">Services</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Learn More About Us <span class="sr-only">(current)</span>
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content bg-dark">
+                                    <a href="aboutus.html">About Us</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                    <li class="dropdown order-1">
+                        <button type="button" data-toggle="dropdown"
+                            class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-2">
+                            <li class="px-3 py-2">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <input id="emailInput" placeholder="Email" class="form-control form-control-sm"
+                                            type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="passwordInput" placeholder="Password"
+                                            class="form-control form-control-sm" type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <small><a href="#" data-toggle="modal" data-target="#modalRegister"
+                                                style="padding-right: 40px;">Register
+                                                Now</a></small>
+                                        <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot
+                                                password?</a></small>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Pop Up Modal -->
+    <div id="modalRegister" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Register Now</h3>
+                    <button type="button" class="close font-weight-light" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form" role="form">
+                        <div class="form-group">
+                            <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <input id="passwordInput" placeholder="Password" class="form-control form-control-sm"
+                                type="text" required="">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Forgot password</h3>
+                    <button type="button" class="close font-weight-light" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Reset your password</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="section1">
+        <h1>Our Services</h1>
+        <img class="img-fluid floating" src="../Images/arrowDown-removebg.png"></img>
+    </div>
+    <!-- Flip Cards -->
+    <div class="container">
+        <div class="row service1">
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-user-secret"></span>
+                                Security Assessments
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Discover vulnerabilities as well as evaluate the risks and
+                                    effectiveness of controls. Leave no stone unturned with CyberPunk's Ethical Hacking
+                                    &
+                                    Penetration Testing services.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Cyber Security Assessments & Audits Services
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Our security assessment and penetration tests include comprehensive
+                                    reports about vulnerabilities and weaknesses which have been identified and
+                                    exploited during the engagement period.</p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-shield-alt"></span>
+                                Cyber Defense Consulting
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Design and integration of security products spanning all layers
+                                    (i.e. network, host, system, and application), which ensures full protection.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Cyber Defense Services
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Because cyber threats keep evolving every day, an organization's
+                                    information infrastructure and access controls must also evolve to avoid security
+                                    breaches.
+                                </p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-tachometer-alt"></span>
+                                Cyber Defense Operation
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Full management and 24x7 monitoring of your security infrastructure
+                                    and devices such as Firewalls, WAFs, Web Proxies, IDS/IPS, and more.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Our Operations
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">IT Security has become today’s biggest concern for every company,
+                                    as IT Systems are becoming more diverse daily. In addition to in-house networks
+                                    needing to be protected, remote workers, partners, suppliers and Cloud
+                                    implementations run an increased risk of being attacked.
+
+                                </p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row service2">
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-bolt"></span>
+                                Cyber Security Incident Response
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Investigation and support by our Cyber SWAT team, from the
+                                    containment to the eradication and recovery after a cyber attack.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Our Reports
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Our cyber defenses against cybercriminals continues to improve due
+                                    to the awareness created by recent news. However, the cyber threat landscape
+                                    evolution’s pace is higher than ever, and that frequently undermines our effort to
+                                    prevent attacks. </p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-bullseye"></span>
+                                Cyber Threat Intelligence
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Get real time visibility into threat actors targeting your
+                                    organisation to prepare for upcoming attacks and limit damages of successful hacks!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Our Intelligence
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Hacker groups could be planning an attack against your organization
+                                    or key personnel while you read this. Perhaps, they have already infiltrated your
+                                    network and are selling your sensitive data and trade secrets to highest bidder on
+                                    the black market.</p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="far fa-eye"></span>
+                                Cyber Security Incident Detection
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Suite of cyber security services, which provides our client with
+                                    expert support in the detection, investigation and response to cyber-attacks.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Cyber Security Incident Detection Services
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Over the last few years, the complexity and range of new cyber
+                                    security threats have grown rapidly. Conventional computer protection technologies
+                                    have become less effective and are no longer able to guarantee the security of
+                                    company assets.</p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CyberPunk</h5>
+                    <p>NOW HIRING! Join us for exclusive positions!</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-1 mb-2">ABOUT CYBERPUNK</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">News</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Investors</a>
+                        </li>
+                        <li>
+                            <a href="#!">Sustainability</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">GET HELP</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!">Payment Options</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <h5 class="mb-1">Register for free</h5>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" data-toggle="modal" data-target="#modalRegister" class="btn  btn-danger btn-rounded">Sign
+                    up!</a>
+            </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr>
+        • English (US) • &copy; Copyright 2020 CyberPunk • <span>
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.facebook.com/FlatSoc/" class="fab fa-facebook-f">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank"
+                        href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        class="fab fa-twitter">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.instagram.com/franciscus/?hl=en" class="fab fa-instagram">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.cyberyouth.sg/meet-the-team" class="fab fa-linkedin-in">
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+        </span>
+
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

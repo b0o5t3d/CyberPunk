@@ -1,0 +1,81 @@
+/*
+
+   CyberPunk Home Page Stylesheet
+   
+   Filename: style.css
+
+*/
+
+/*parallax scrolling*/
+
+.section1 {
+    min-height: 700px;
+    max-width: 100%;
+    background-image: url(https://media1.giphy.com/media/hun4DFmfnDId3lid5b/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*sec 2 styles*/
+
+.section2 {
+    background-color: gainsboro;
+    color: black;
+    padding: 100px 0 100px 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*the vertical bar styles*/
+
+.line {
+    border-right: 0.08em solid black;
+    font-size: 1em;
+}
+
+/*more parallax scrolling*/
+
+.section3 {
+    min-height: 700px;
+    max-width: 100%;
+    background-image: url(https://www.sans.org/sites/default/files/large-img-blog-cybersecurity-career-500x300-01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*sec 4 styles*/
+
+.section4 {
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.section4 img {
+    padding-bottom: 50px;
+    max-width: 500px;
+}
+
+.section4 ul, .tab-content {
+    padding-top: 20px;
+}
+
+.btn-danger {
+    margin-bottom: 20px;
+}
+
+/*parallax scrolling again*/
+
+.section5 {
+    min-height: 700px;
+    max-width: 100%;
+    background-image: url(https://i.pinimg.com/originals/00/2d/7e/002d7e638fb463fb7a266f5ffc7ac47d.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

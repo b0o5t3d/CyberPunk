@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    CyberPunk
+    Date: 10/8/2020  
+
+    Filename: aboutus.html
+   -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberPunk</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/layout.css" />
+    <link rel="stylesheet" href="../CSS/aboutus.css" />
+    <script src="https://kit.fontawesome.com/7eaa83c1bd.js" crossorigin="anonymous"></script>
+    <script src="../JS/aboutus.js" defer></script>
+    <script src="../JS/top.js" defer></script>
+</head>
+
+<body>
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top <i class="fas fa-arrow-up"></i></button>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../Images/logo.png" width="130" />
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#exCollapsingNavbar">
+                &#9776;
+            </button>
+            <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+                <div id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="services.html" class="nav-link">Services</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Learn More About Us <span class="sr-only">(current)</span>
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content bg-dark">
+                                    <a href="aboutus.html">About Us</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                    <li class="dropdown order-1">
+                        <button type="button" data-toggle="dropdown"
+                            class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-2">
+                            <li class="px-3 py-2">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <input id="emailInput" placeholder="Email" class="form-control form-control-sm"
+                                            type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="passwordInput" placeholder="Password"
+                                            class="form-control form-control-sm" type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <small><a href="#" data-toggle="modal" data-target="#modalRegister"
+                                                style="padding-right: 40px;">Register
+                                                Now</a></small>
+                                        <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot
+                                                password?</a></small>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Pop Up Modal -->
+    <div id="modalRegister" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Register Now</h3>
+                    <button type="button" class="close font-weight-light" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form" role="form">
+                        <div class="form-group">
+                            <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <input id="passwordInput" placeholder="Password" class="form-control form-control-sm"
+                                type="text" required="">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Forgot password</h3>
+                    <button type="button" class="close font-weight-light" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Reset your password</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The header of the page -->
+    <section class="text-center about">
+        <h1>About Us</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 about-item">
+                    <span id="button1" class="fa fa-file"></span>
+                    <h2>Our Belief</h2>
+                    <p class="lead">Learn more about what we do!</p>
+                </div>
+                <div class="col-lg-4 col-sm-4 about-item">
+                    <span id="button2" class="fa fa-info-circle"></span>
+                    <h2>Meet our Team </h2>
+                    <p class="lead">We enjoy doing our jobs and it is a pleasure to help the community! </p>
+                </div>
+                <div class="col-lg-4 col-sm-4 about-item">
+                    <span id="button3" class="fas fa-user-friends"></span>
+                    <h2>Our Team Members</h2>
+                    <p class="lead">Find out more about what each of us do!</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Where we talked about CyberPunk -->
+    <div id="sec1"></div>
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 bgcol p-5">
+                    <div class="content text-right">
+                        <h1 class="display-4 text-white">
+                            69 years
+                        </h1>
+                        <span class="pl-5 text-white">of experience</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>What do we do?</h2>
+                    <p class="main"> CyberPunk has built a solid foundation of information security, quality and project
+                        management know-how. We are known for their ability to apply the right soft skills at the right
+                        time to best serve our customers. We make it a point to understand the infrastructure, needs and
+                        challenges of our customers, which enables us to deliver fast, effective and high quality
+                        results. It is our belief that this level of understanding can only be obtained with the most
+                        capable and experienced resources. Reach out to our associates at any time through our
+                        interactive competence centers to draw upon our knowledge of processes, procedures, guidelines
+                        and tools. You’ll be able to see, firsthand, the value our team will add to your organization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Team -->
+    <div id="sec2"></div>
+    <section class="p-0 p-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4>Our team</h4>
+                    <p class="lead">We identify unwanted exposure, protect against external threats, and minimize
+                        digital risk. <br>
+                        Learn more about us from our co-founders, Iuk Yaj Guns and Belldrick Nat.
+                        <i class="fas fa-arrow-down d-block pb-5 pt-3"></i>
+                        <img class="img-fluid" src="../Images/Our-Team.jpg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Team Members -->
+    <div id="sec3"></div>
+    <section class="p- p-md-5">
+        <div class="container">
+            <h2>Our Team Members</h2>
+            <div class="d-lg-flex justify-content-space-between">
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="../Images/jk.png" class="testimg" alt="error">
+                                Iuk Yaj Guns • Co-Founder
+                            </h5>
+                            <hr>
+                            <p class="card-text">Yaj Guns started CyberPunk in 2005 with Belldrick Nat. In addition to
+                                setting the vision and direction for CyberPunk, he
+                                still likes to study.
+                                Yaj Guns holds three degrees from MIT and an MBA from Harvard.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="../Images/p1.jpg" class="testimg" alt="error">
+                                Belldrick Nat • Co-Founder
+                            </h5>
+                            <hr>
+                            <p class="card-text">Belldrick started CyberPunk in 2005 with Iuk Yaj Guns. In addition to
+                                setting the vision and direction for CyberPunk, he
+                                still likes to play online games.
+                                Belldrick holds a Diploma from Singapore Polytechnic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="../Images/p2.jpg" class="testimg" alt="error">
+                                Ng Chee Heng • CEO
+                            </h5>
+                            <hr>
+                            <p class="card-text">As the highest-ranking executive in a company, Chee Heng's primary
+                                responsibilities
+                                include making major corporate decisions, managing the overall operations and resources
+                                of a company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-flex justify-content-space-between">
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="../Images/p3.jpg" class="testimg" alt="error">
+                                Loen Thongs • Finance Manager
+                            </h5>
+                            <hr>
+                            <p class="card-text">With the courage and determination to help the company finantially,
+                                Loen aims to overcome any CyberPunk's economic crisis that comes his way.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="../Images/p4.jpg" class="testimg" alt="error">
+                                Loo How Xian • Director of Sales
+                            </h5>
+                            <hr>
+                            <p class="card-text">How Xian manages all sales efforts of the sales team, strategically
+                                plan and
+                                launch new products or services, ensure the company continues to provide excellent
+                                customer service, motivate the sales team and ensure the sales team meets expected sales
+                                targets. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="../Images/p5.jpg" class="testimg" alt="error">
+                                Gordric Muck • Executive Director
+                            </h5>
+                            <hr>
+                            <p class="card-text">Coming from a prestigious family of high-scolars, Gordric acomplishes
+                                his tasks with excellence for CyberPunk to be as efficient as possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CyberPunk</h5>
+                    <p>NOW HIRING! Join us for exclusive positions!</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-1 mb-2">ABOUT CYBERPUNK</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">News</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Investors</a>
+                        </li>
+                        <li>
+                            <a href="#!">Sustainability</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">GET HELP</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!">Payment Options</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <h5 class="mb-1">Register for free</h5>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" data-toggle="modal" data-target="#modalRegister" class="btn btn-danger btn-rounded">Sign
+                    up!</a>
+            </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr>
+        <!-- Social buttons -->
+        • English (US) • &copy; Copyright 2020 CyberPunk • <span>
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.facebook.com/FlatSoc/" class="fab fa-facebook-f">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank"
+                        href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        class="fab fa-twitter">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.instagram.com/franciscus/?hl=en" class="fab fa-instagram">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.cyberyouth.sg/meet-the-team" class="fab fa-linkedin-in">
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+        </span>
+
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
