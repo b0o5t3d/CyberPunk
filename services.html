@@ -3,10 +3,11 @@
 
 <head>
     <!--
+    
     CyberPunk
     Date: 10/8/2020  
 
-    Filename: contact.html
+    Filename: services.html
    -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,9 +24,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/layout.css" />
-    <link rel="stylesheet" href="../CSS/contact.css" />
-    <script src="../JS/top.js" defer></script>
+    <link rel="stylesheet" href="CSS/layout.css" />
+    <link rel="stylesheet" href="CSS/services.css" />
+    <script src="JS/top.js" defer></script>
     <script src="https://kit.fontawesome.com/7eaa83c1bd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -36,7 +37,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="../Images/logo.png" width="130" />
+                <img src="Images/logo.png" width="130" />
             </a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
                 data-target="#exCollapsingNavbar">
@@ -161,111 +162,199 @@
             </div>
         </div>
     </div>
-    <!-- Left Hand Side -->
-    <div class="container contact">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="contact-info">
-                    <h2>Contact Us</h2>
-                    <i class="fas fa-envelope"></i>
-                    <h4>Feel free to send us a message if you have any enquiries!</h4><br>
-                    <h5>Check out our Social Media too!</h5>
-                    <ul class="list-unstyled list-inline text-center">
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.facebook.com/FlatSoc/" class="fab fa-facebook-f">
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank"
-                                href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                                class="fab fa-twitter">
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.instagram.com/franciscus/?hl=en"
-                                class="fab fa-instagram">
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.cyberyouth.sg/meet-the-team"
-                                class="fab fa-linkedin-in">
-                            </a>
-                        </li>
-                    </ul>
+    <!-- Header -->
+    <div class="section1">
+        <h1>Our Services</h1>
+        <img class="img-fluid floating" src="Images/arrowDown-removebg.png"></img>
+    </div>
+    <!-- Flip Cards -->
+    <div class="container">
+        <div class="row service1">
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-user-secret"></span>
+                                Security Assessments
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Discover vulnerabilities as well as evaluate the risks and
+                                    effectiveness of controls. Leave no stone unturned with CyberPunk's Ethical Hacking
+                                    &
+                                    Penetration Testing services.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Cyber Security Assessments & Audits Services
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Our security assessment and penetration tests include comprehensive
+                                    reports about vulnerabilities and weaknesses which have been identified and
+                                    exploited during the engagement period.</p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Right Hand Side -->
-            <div class="col-md-9">
-                <div class="contact-form">
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="fname">First Name:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name"
-                                name="fname">
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-shield-alt"></span>
+                                Cyber Defense Consulting
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Design and integration of security products spanning all layers
+                                    (i.e. network, host, system, and application), which ensures full protection.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Cyber Defense Services
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Because cyber threats keep evolving every day, an organization's
+                                    information infrastructure and access controls must also evolve to avoid security
+                                    breaches.
+                                </p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="lname">Last Name:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
-                                name="lname">
+                </div>
+            </div>
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-tachometer-alt"></span>
+                                Cyber Defense Operation
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Full management and 24x7 monitoring of your security infrastructure
+                                    and devices such as Firewalls, WAFs, Web Proxies, IDS/IPS, and more.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Our Operations
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">IT Security has become today’s biggest concern for every company,
+                                    as IT Systems are becoming more diverse daily. In addition to in-house networks
+                                    needing to be protected, remote workers, partners, suppliers and Cloud
+                                    implementations run an increased risk of being attacked.
+
+                                </p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Email:</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                </div>
+            </div>
+        </div>
+        <div class="row service2">
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-bolt"></span>
+                                Cyber Security Incident Response
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Investigation and support by our Cyber SWAT team, from the
+                                    containment to the eradication and recovery after a cyber attack.</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Our Reports
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Our cyber defenses against cybercriminals continues to improve due
+                                    to the awareness created by recent news. However, the cyber threat landscape
+                                    evolution’s pace is higher than ever, and that frequently undermines our effort to
+                                    prevent attacks. </p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="mobile">Mobile:</label>
-                        <div class="col-sm-10">
-                            <input type="tel" class="form-control" id="mobile" patern="^\d{8}$"
-                                placeholder="Enter Mobile" name="mobile">
+                </div>
+            </div>
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="fas fa-bullseye"></span>
+                                Cyber Threat Intelligence
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Get real time visibility into threat actors targeting your
+                                    organisation to prepare for upcoming attacks and limit damages of successful hacks!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Our Intelligence
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Hacker groups could be planning an attack against your organization
+                                    or key personnel while you read this. Perhaps, they have already infiltrated your
+                                    network and are selling your sensitive data and trade secrets to highest bidder on
+                                    the black market.</p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="comment">Comment:</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" rows="5" id="comment" placeholder="Enter Message"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-4 py-3">
+                <div class="flip-card mt-3 mx-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5 class="card-title"><span class="far fa-eye"></span>
+                                Cyber Security Incident Detection
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Suite of cyber security services, which provides our client with
+                                    expert support in the detection, investigation and response to cyber-attacks.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="file">Upload file: <input type="file" id="file"
-                                name="file"></label>
-                    </div>
-                    <div class="form-group">
-                        <div style="padding-left:13px">
-                            <button type="submit" class="btn btn-default">Submit</button>
+                        <div class="flip-card-back">
+                            <h5 class="card-title">
+                                Cyber Security Incident Detection Services
+                            </h5>
+                            <hr>
+                            <div class="paragraph">
+                                <p class="card-text">Over the last few years, the complexity and range of new cyber
+                                    security threats have grown rapidly. Conventional computer protection technologies
+                                    have become less effective and are no longer able to guarantee the security of
+                                    company assets.</p>
+                            </div>
+                            <a class="btn learn">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Locations -->
-    <div class="container location">
-        <div class="row">
-            <div class="col-md-6 office">
-                <h2>Office Locations</h2>
-                <p class="lead">500 Dover Road</p>
-                <p class="lead">Singapore 139651</p>
-                <span class="fas fa-phone"> +65 6775 1133</span>
-                <h2>Office Hours</h2>
-                <p>Monday: 9am-9pm</p>
-                <p>Tuesday: 9am-9pm</p>
-                <p>Wednesday: 9am-9pm</p>
-                <p>Thurday: 9am-9pm</p>
-                <p>Friday: 9am-9pm</p>
-                <p>Saturday/Sunday: Non-Working Hours</p>
-            </div>
-            <div class="col-md-6 iframe">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7758676388303!2d103.77536081534474!3d1.3097810620662795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a602ff17c15%3A0xa9545dd23993859e!2sSingapore%20Polytechnic!5e0!3m2!1sen!2ssg!4v1620571527898!5m2!1sen!2ssg"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </div>
-    </div>
+
+
+
     <!-- Footer -->
     <footer class="page-footer font-small stylish-color-dark pt-4">
 
@@ -351,7 +440,7 @@
                 <h5 class="mb-1">Register for free</h5>
             </li>
             <li class="list-inline-item">
-                <a href="#" data-toggle="modal" data-target="#modalRegister" class="btn btn-danger btn-rounded">Sign
+                <a href="#" data-toggle="modal" data-target="#modalRegister" class="btn  btn-danger btn-rounded">Sign
                     up!</a>
             </li>
         </ul>

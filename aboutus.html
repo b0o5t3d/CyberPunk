@@ -6,11 +6,12 @@
     CyberPunk
     Date: 10/8/2020  
 
-    Filename: testimonials.html
+    Filename: aboutus.html
    -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CyberPunk</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -23,11 +24,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/layout.css" />
-    <link rel="stylesheet" href="../CSS/testimonials.css" />
-    <script src="../JS/top.js" defer></script>
-    <script src="../JS/testimonials.js" defer></script>
+    <link rel="stylesheet" href="CSS/layout.css" />
+    <link rel="stylesheet" href="CSS/aboutus.css" />
     <script src="https://kit.fontawesome.com/7eaa83c1bd.js" crossorigin="anonymous"></script>
+    <script src="JS/aboutus.js" defer></script>
+    <script src="JS/top.js" defer></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="../Images/logo.png" width="130" />
+                <img src="Images/logo.png" width="130" />
             </a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
                 data-target="#exCollapsingNavbar">
@@ -162,218 +163,174 @@
             </div>
         </div>
     </div>
-    <!-- Carousel Slides -->
-    <section id="testimonials">
+    <!-- The header of the page -->
+    <section class="text-center about">
+        <h1>About Us</h1>
         <div class="container">
-            <h1>Our Testimonials</h1>
-            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-                <div class="carousel-inner text-center">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="4"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="5"></li>
-                    </ol>
-                    <div class="carousel-item active">
-                        <div class="col-md-12">
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <img src="../Images/t1.jpg" class="testimg" alt="error">
-                                        Hog Heng Yee • Satisfied Customer
-                                    </h5>
-                                    <hr>
-                                    <p class="card-text">"I am super pleased with CyberPunk! Their staffs are super
-                                        friendly and they even went above and beyond to help me with my problems! Would
-                                        recommend to all my friends and family!"</p>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 about-item">
+                    <span id="button1" class="fa fa-file"></span>
+                    <h2>Our Belief</h2>
+                    <p class="lead">Learn more about what we do!</p>
+                </div>
+                <div class="col-lg-4 col-sm-4 about-item">
+                    <span id="button2" class="fa fa-info-circle"></span>
+                    <h2>Meet our Team </h2>
+                    <p class="lead">We enjoy doing our jobs and it is a pleasure to help the community! </p>
+                </div>
+                <div class="col-lg-4 col-sm-4 about-item">
+                    <span id="button3" class="fas fa-user-friends"></span>
+                    <h2>Our Team Members</h2>
+                    <p class="lead">Find out more about what each of us do!</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Where we talked about CyberPunk -->
+    <div id="sec1"></div>
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 bgcol p-5">
+                    <div class="content text-right">
+                        <h1 class="display-4 text-white">
+                            69 years
+                        </h1>
+                        <span class="pl-5 text-white">of experience</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>What do we do?</h2>
+                    <p class="main"> CyberPunk has built a solid foundation of information security, quality and project
+                        management know-how. We are known for their ability to apply the right soft skills at the right
+                        time to best serve our customers. We make it a point to understand the infrastructure, needs and
+                        challenges of our customers, which enables us to deliver fast, effective and high quality
+                        results. It is our belief that this level of understanding can only be obtained with the most
+                        capable and experienced resources. Reach out to our associates at any time through our
+                        interactive competence centers to draw upon our knowledge of processes, procedures, guidelines
+                        and tools. You’ll be able to see, firsthand, the value our team will add to your organization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Team -->
+    <div id="sec2"></div>
+    <section class="p-0 p-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4>Our team</h4>
+                    <p class="lead">We identify unwanted exposure, protect against external threats, and minimize
+                        digital risk. <br>
+                        Learn more about us from our co-founders, Iuk Yaj Guns and Belldrick Nat.
+                        <i class="fas fa-arrow-down d-block pb-5 pt-3"></i>
+                        <img class="img-fluid" src="Images/Our-Team.jpg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Team Members -->
+    <div id="sec3"></div>
+    <section class="p- p-md-5">
+        <div class="container">
+            <h2>Our Team Members</h2>
+            <div class="d-lg-flex justify-content-space-between">
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="Images/jk.png" class="testimg" alt="error">
+                                Iuk Yaj Guns • Co-Founder
+                            </h5>
+                            <hr>
+                            <p class="card-text">Yaj Guns started CyberPunk in 2005 with Belldrick Nat. In addition to
+                                setting the vision and direction for CyberPunk, he
+                                still likes to study.
+                                Yaj Guns holds three degrees from MIT and an MBA from Harvard.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-12">
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <img src="../Images/t2.jpg" class="testimg" alt="error">
-                                        Richard Kim • Satisfied Customer
-                                    </h5>
-                                    <hr>
-                                    <p class="card-text">"Collaboration with CyberPunk has enabled us to unlock
-                                        tremendous potential in multiple areas of our operations. Their insights into
-                                        complex mobility problems and ability to execute improvements based on these
-                                        learnings has been impressive and exciting."</p>
-                                </div>
-                            </div>
+                </div>
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="Images/p1.jpg" class="testimg" alt="error">
+                                Belldrick Nat • Co-Founder
+                            </h5>
+                            <hr>
+                            <p class="card-text">Belldrick started CyberPunk in 2005 with Iuk Yaj Guns. In addition to
+                                setting the vision and direction for CyberPunk, he
+                                still likes to play online games.
+                                Belldrick holds a Diploma from Singapore Polytechnic.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-12">
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <img src="../Images/t3.jpg" class="testimg" alt="error">
-                                        Kaiser Nehc • Satisfied Customer
-                                    </h5>
-                                    <hr>
-                                    <p class="card-text">"I was paid $2 to write this. Here goes I guess. They is good!"
-                                    </p>
-                                </div>
-                            </div>
+                </div>
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="Images/p2.jpg" class="testimg" alt="error">
+                                Ng Chee Heng • CEO
+                            </h5>
+                            <hr>
+                            <p class="card-text">As the highest-ranking executive in a company, Chee Heng's primary
+                                responsibilities
+                                include making major corporate decisions, managing the overall operations and resources
+                                of a company.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-12">
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <img src="../Images/t4.jpg" class="testimg" alt="error">
-                                        Kevin Tou • Satisfied Customer
-                                    </h5>
-                                    <hr>
-                                    <p class="card-text">"Without CyberPunk, I do not know what I could have done to
-                                        prevent all the malwares in my computer. I am deeply grateful to them and would
-                                        recommend it to everyone!"</p>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            <div class="d-lg-flex justify-content-space-between">
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="Images/p3.jpg" class="testimg" alt="error">
+                                Loen Thongs • Finance Manager
+                            </h5>
+                            <hr>
+                            <p class="card-text">With the courage and determination to help the company finantially,
+                                Loen aims to overcome any CyberPunk's economic crisis that comes his way.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-12">
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <img src="../Images/t5.jpg" class="testimg" alt="error">
-                                        Cai Wan Qing • Satisfied Customer
-                                    </h5>
-                                    <hr>
-                                    <p class="card-text">"CyberPunk was able to greatly simplify the complicated
-                                        security risks
-                                        process for us. What I thought was going to be an extremely
-                                        stressful time for me, turned out to be smooth because of CyberPunk's
-                                        guidance."</p>
-                                </div>
-                            </div>
+                </div>
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="Images/p4.jpg" class="testimg" alt="error">
+                                Loo How Xian • Director of Sales
+                            </h5>
+                            <hr>
+                            <p class="card-text">How Xian manages all sales efforts of the sales team, strategically
+                                plan and
+                                launch new products or services, ensure the company continues to provide excellent
+                                customer service, motivate the sales team and ensure the sales team meets expected sales
+                                targets. </p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-12">
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <img src="../Images/t6.jpg" class="testimg" alt="error">
-                                        Ronald Cua • Satisfied Customer
-                                    </h5>
-                                    <hr>
-                                    <p class="card-text">"Our partnership with CyberPunk enables us to accelerate and
-                                        de-risk the launch of my new company and to optimize existing ones.
-                                        Within days, we are able to access actionable insights on our fleet performance
-                                        across critical business metric"</p>
-                                </div>
-                            </div>
+                </div>
+                <div class="flexitem p-2 d-flex align-items-stretch" style="flex: 1 1 0px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="Images/p5.jpg" class="testimg" alt="error">
+                                Gordric Muck • Executive Director
+                            </h5>
+                            <hr>
+                            <p class="card-text">Coming from a prestigious family of high-scolars, Gordric acomplishes
+                                his tasks with excellence for CyberPunk to be as efficient as possible.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Partners -->
-    <div class="container partners">
-        <h2><u>Our Partners and Clients</u></h2>
-        <div class="row align-center justify-content-center">
-            <div class="p-5 col-12 col-md-6 col-lg-3">
-                <div>
-                    <a href="#">
-                        <img src="../Images/certego.webp" class="img-fluid">
-                    </a>
-                    <div class="card-box">
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 col-12 col-md-6 col-lg-3">
-                <div>
-                    <a href="#">
-                        <img src="../Images/ciss.jpg" class="img-fluid">
-                    </a>
-                    <div class="card-box">
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 col-12 col-md-6 col-lg-3">
-                <div>
-                    <a href="#">
-                        <img src="../Images/alienvault.webp" class="img-fluid">
-                    </a>
-                    <div class="card-box">
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 col-12 col-md-6 col-lg-3">
-                <div>
-                    <a href="#">
-                        <img src="../Images/barracuda.webp" class="img-fluid">
-                    </a>
-                    <div class="card-box">
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 col-12 col-md-6 col-lg-3">
-                <div>
-                    <a href="#">
-                        <img src="../Images/checkmarx.webp" class="img-fluid">
-                    </a>
-                    <div class="card-box">
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="p-5 col-12 col-md-6 col-lg-3">
-                <div>
-                    <a href="#">
-                        <img src="../Images/forescout.webp" class="img-fluid">
-                    </a>
-                    <div class="card-box">
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-5 col-12 col-md-6 col-lg-3">
-                <div>
-                    <a href="#">
-                        <img src="../Images/f5.webp" class="img-fluid">
-                    </a>
-                    <div class="card-box">
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-5 col-12 col-md-6 col-lg-3">
-                <div>
-                    <a href="#">
-                        <img src="../Images/imperva.webp" class="img-fluid">
-                    </a>
-                    <div class="card-box">
-                        <p class="lead"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer class="page-footer font-small stylish-color-dark pt-4">
 
@@ -425,7 +382,7 @@
                 <div class="col-md-2 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-1 mb-2">ADDITIONAL DETAILS</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">GET HELP</h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -466,6 +423,7 @@
         <!-- Call to action -->
 
         <hr>
+        <!-- Social buttons -->
         • English (US) • &copy; Copyright 2020 CyberPunk • <span>
             <!-- Social buttons -->
             <ul class="list-unstyled list-inline text-center">
